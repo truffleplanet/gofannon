@@ -7,10 +7,6 @@ PR_NUMBER="$2"
 REPO="$3"  
 GITHUB_TOKEN="$4"  
 
-echo "AUTHOR: $AUTHOR"
-echo "PR_NUMBER: $PR_NUMBER"
-echo "REPO: $REPO"
-
 # Search for merged PRs by this author  
 SEARCH_URL="https://api.github.com/search/issues?q=is:merged+is:pr+author:${AUTHOR}+repo:${REPO}"  
 echo "Checking for merged PRs: ${SEARCH_URL}"  
